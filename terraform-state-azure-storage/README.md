@@ -4,8 +4,9 @@ Store Terraform state in Azure Storage
 
 References:
 
+* <https://www.terraform.io/docs/backends/types/azurerm.html>
 * <https://docs.microsoft.com/en-us/azure/developer/terraform/store-state-in-azure-storage>
-
+  
 ## Prerequisites
 
 * Azure CLI
@@ -33,5 +34,21 @@ chmod 775 *.sh
 Take note of the storage account name, container name, and storage access key. These values are needed when you configure the remote state.
 
 ## Configure state back end
+
+```sh
+export ARM_ACCESS_KEY=<storage access key>
+```
+
+Initialize the configuration by doing the following steps:
+
+Run the terraform init command.
+
+```sh
+terraform init \
+    -backend-config="storage_account_name=<storage account name>"
+```
+
+Run the terraform apply command.
+You can now find the state file in the Azure Storage blob.
 
 ## Cleanup the storage account

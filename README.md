@@ -5,7 +5,7 @@ Terraform samples for creating Azure infra
 References:
 
 * <https://docs.microsoft.com/en-us/azure/terraform/>
-* <https://learn.hashicorp.com/terraform/azure/intro_az>
+* <https://learn.hashicorp.com/collections/terraform/azure-get-started>
 
 ## Prerequisites
 
