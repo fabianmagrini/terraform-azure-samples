@@ -4,7 +4,7 @@ Store Terraform state in Azure Storage
 
 References:
 
-* https://docs.microsoft.com/en-us/azure/developer/terraform/store-state-in-azure-storage
+* <https://docs.microsoft.com/en-us/azure/developer/terraform/store-state-in-azure-storage>
 
 ## Prerequisites
 
